@@ -1,4 +1,3 @@
-<!DOCTYPE html!>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -6,48 +5,34 @@
   <title>Hienot nettisivut</title>
   <style type="text/css">
 
-    .modal_wrapper{
-       display:none
-   }
-   .modal_inner{
-       position:absolute;
-       height: auto;
-   }
-   .mod_close{
-       position:absolute;
-       top: 50px;
-       right: 5%;
-       z-index: 99999;
-       background: #fff;
-       display:block;
-       padding: 5px 10px;
-       border-radius:50%;
-       cursor:pointer;
-       font-family: 'Arial' sans-serif
-   }
-   .modal-inner iframe{
-       position:absolute;
-       height: 100%;
-       width: 100%;
-   }
-   .modal_inner iframe,
-   .modal_wrapper, .modal_inner{
-       top: 0;
-       left: 0;
-       bottom: 0;
-       right: 0;
-       margin: 0;
-       margin:auto;
-    }
-   .modal_wrapper.active{
-       opacity:1;
-       z-index: 99;
-       position:fixed;
-       display:block;
-   }
-     
+.v-header{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color:white;
+}
 
+.container{
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin:auto;
+  text-align: center;
+}
 
+.fullscreen-video-wrap{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fullscreen-video-wrap video{
+
+  min-width: 100%;
+  min-height: 100%;
 
   </style>
 
@@ -57,41 +42,55 @@
 <body>
     <button onclick="playvideo()">Klikkaa tästä</button>
 
-<div class="modal_wrapper">
-    <div class="modal_inner">
-        <span class="mod_close"> x </span>
+    <header class="v-header container">
+  <div class="fullscreen-video-wrap">
+      <video src="https://github.com/XeXCyX/XeXCyX.github.io/raw/main/Rick%20Astley%20-%20Never%20Gonna%20Give%20You%20Up.mp4" autoplay>
+      </video>
     </div>
+    <div class="header-overlay">
+  <div class="header-content container">
+    <h1 style="font-size:200px">...</h1>
+    <p style="font-size:100px">...</p>
+  <button onClick="document.getElementById('Start').scrollIntoView();" type="button" class="btn btn-outline-info" style="font-size:50px; color: pink; border-radius:60px">Learn More</button>
+
 </div>
 
+    
+
+</header>
 <script> 
-  var modwrapper = document.getElementsByClassName("modal_wrapper")[0],
-      mod_close = document.getElementsByClassName("mod_close")[0],
-      modinner = document.getElementsByClassName("modal_inner")[0];
+    var modwrapper = document.getElementsByClassName("modal_wrapper")[0],
+        mod_close = document.getElementsByClassName("mod_close")[0],
+        modinner = document.getElementsByClassName("modal_inner")[0];
+    
+      function playvideo(){
+        modwrapper.classList.add("active");
   
-    function playvideo(){
-      modwrapper.classList.add("active");
+        <video width="1920" height="720" autoplay>
+    <source src="https://github.com/XeXCyX/XeXCyX.github.io/blob/main/Rick%20Astley%20-%20Never%20Gonna%20Give%20You%20Up.mp4" type="video/mp4">
 
-      let iframe = document.createElement("iframe");
-      iframe.setAttribute("src", "https://emb.d.tube/#!//('files':('youtube':'dQw4w9WgXcQ'),'dur':'213','nsfw':0,'oc':0,'thumbnailUrl':'https:!!i.ytimg.com!vi!dQw4w9WgXcQ!mqdefault.jpg')");
-    
-      iframe.setAttribute("frameborder", "0");
-      iframe.setAttribute("allow", "0");
-      iframe.setAttribute("allowfullscreen", "")
-    
-      iframe.classList.add("modal_vid");
- 
-    
-      modinner.append(iframe);
-  }
+  </video>
+      
+        iframe.setAttribute("frameborder", "0");
+        iframe.setAttribute("allow", "0");
+        iframe.setAttribute("allowfullscreen", "")
+      
+        iframe.classList.add("modal_vid");
+        
+        
+        modinner.append(iframe);
+    }
+  
+    mod_close.addEventListener("click", function(){
+          var modalvid = document.getElementsByClassName("modal_vid") [0];
+          modwrapper.classList.remove("active");
+      
+          modalvid.remove();
+    }) 
+  </script>
 
-  mod_close.addEventListener("click", function(){
-        var modalvid = document.getElementsByClassName("modal_vid") [0];
-        modwrapper.classList.remove("active");
-    
-        modalvid.remove();
-  }) 
-</script>
-
+  </video>
 
 </body>
 </html>
+
