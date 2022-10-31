@@ -65,7 +65,7 @@
 
 <script> 
   var modwrapper = document.getElementsByClassName("modal_wrapper")[0],
-      mod_close = document.getElementsByClassName("modal_close")[0],
+      mod_close = document.getElementsByClassName("mod_close")[0],
       modinner = document.getElementsByClassName("modal_inner")[0];
   
     function playvideo(){
@@ -83,7 +83,12 @@
       modinner.append(iframe);
   }
 
-
+  mod_close.addEventListener("click", function(){
+        var modalvid = document.getElementsByClassName("modal_vid") [0];
+        modwrapper.classList.remove("active");
+    
+        modalvid.remove();
+  }) 
 </script>
 
 
