@@ -79,6 +79,9 @@
       iframe.setAttribute("allowfullscreen", "")
     
       iframe.classList.add("modal_vid");
+      
+      var vid = document.getElementById("modal_vid");
+      vid.volume = 1
     
       modinner.append(iframe);
   }
