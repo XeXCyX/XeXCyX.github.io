@@ -72,16 +72,14 @@
       modwrapper.classList.add("active");
 
       let iframe = document.createElement("iframe");
-      iframe.setAttribute("src", "https://archive.org/embed/Rick_Astley_Never_Gonna_Give_You_Up&autoplay=1&mute=0");
+      iframe.setAttribute("src", "https://archive.org/embed/Rick_Astley_Never_Gonna_Give_You_Up&autoplay=1&");
     
       iframe.setAttribute("frameborder", "0");
       iframe.setAttribute("allow", "0");
       iframe.setAttribute("allowfullscreen", "")
     
       iframe.classList.add("modal_vid");
-      
-      var vid = document.getElementById("iframe");
-      vid.volume = 1
+ 
     
       modinner.append(iframe);
   }
