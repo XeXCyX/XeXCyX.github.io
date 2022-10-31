@@ -10,40 +10,40 @@
        display:none
    }
    .modal_inner{
-     position:absolute;
-     height: auto;
+       position:absolute;
+       height: auto;
    }
    .mod_close{
-     position:absolute;
-     top: 50px;
-     right: 5%;
-     z-index: 99999;
-     background: #fff;
-     display:block;
-     padding: 5px 10px;
-     border-radius:50%;
-     cursor:pointer;
-     font-family: 'Arial' sans-serif
+       position:absolute;
+       top: 50px;
+       right: 5%;
+       z-index: 99999;
+       background: #fff;
+       display:block;
+       padding: 5px 10px;
+       border-radius:50%;
+       cursor:pointer;
+       font-family: 'Arial' sans-serif
    }
    .modal-inner iframe{
-     position:absolute;
-     height: 100%;
-     widht:100%;
+       position:absolute;
+       height: 100%;
+       widht:100%;
    }
    .modal_inner iframe,
    .modal_wrapper, .modal_inner{
-     top: 0,
-     left 0,
-     bottom 0,
-     right: 0,
-     margin 0,
-     margin:auto;
+       top: 0,
+       left 0,
+       bottom 0,
+       right: 0,
+       margin 0,
+       margin:auto;
    }
    .modal_wrapper.active{
-     opacity:1;
-     z-index: 99;
-     position:fixed;
-     display:block;
+       opacity:1;
+       z-index: 99;
+       position:fixed;
+       display:block;
    }
      
 
@@ -80,14 +80,15 @@
     
       modinner.append(iframe);
   }
-  
+
   mod_close.addEventListener("click", function(){
     var modalvid = document.getElementsByClassName("modal_vid") [0];
     modwrapper.classList.remove("active");
     
     modalvid.remove();
-    </body>
+</script>
+
 <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?&controls=0"
     title="Youtube video player" frameborder="0" allow="accelometer; autoplay; clipboard-white; ecrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</iframe>
+</body>
 </html>
