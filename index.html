@@ -4,9 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="widht=device-widht initial_scale=1">
   <title>Hienot nettisivut</title>
- 
-   .modal_wrapper{
-     display:none
+  <style type="text/css">
+
+.modal_wrapper{
+       display:none
    }
    .modal_inner{
      position:absolute;
@@ -47,13 +48,19 @@
      
 
 
+
+  </style>
+
+
   </head>
   
   <body>
     <button onclick="playvideo()">Klikkaa tästä</button>
-   <div class="modal_wrapper">
-     <div class="modal_inner">
-       <span class="mod_close"> x </span>
+
+<div class="modal_wrapper">
+    <div class="modal_inner">
+        <span class="mod_close"> x </span>
+</div>
 
 <script> 
   var modwrapper = document.getElementsByClassName("modal_wrapper")[0],
@@ -79,7 +86,7 @@
     modwrapper.classList.remove("active");
     
     modalvid.remove();
-  </body>
+    </body>
 <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?&controls=0"
     title="Youtube video player" frameborder="0" allow="accelometer; autoplay; clipboard-white; ecrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </iframe>
