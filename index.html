@@ -5,6 +5,9 @@
   <meta name="viewport" content="widht=device-widht initial_scale=1">
   <title>Hienot nettisivut</title>
  
+   .modal_wrapper{
+     display:none
+   }
    .modal_inner{
      position:absolute;
      height: auto;
@@ -47,10 +50,19 @@
   </head>
   
   <body>
-    Get rick rolled
-   <div class="modal_wrapper active">
+    <button onclick="playvideo()">Klikkaa tästä</button>
+   <div class="modal_wrapper">
      <div class="modal_inner">
        <span class="mod_close"> x </span>
+
+<script> 
+  var modwrapper = documemt.getElementsByClassName("modal_wrapper")[0],
+      mod_close = documemt.getElementsByClassName("modal_close")[0],
+      modinner = documemt.getElementsByClassName("modal_inner")[0],
+  function playvideo(){
+      modwrapper.classList.add("active");
+
+      let iframe = dokument.createElement("iframe");
   </body>
   <iframe width="1280" height="720"
 src="https://www.youtube.com/embed/dQw4w9WgXcQ?&autoplay=1&mute=1">
