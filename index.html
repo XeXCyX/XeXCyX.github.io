@@ -2,11 +2,55 @@
 <html>
   <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="widht=device-widht initial_scale=1">
   <title>Hienot nettisivut</title>
+ 
+   .modal_inner{
+     position:absolute;
+     height: auto;
+   }
+   .mod_close{
+     position:absolute;
+     top: 50px;
+     right: 5%;
+     z-index: 99999;
+     background: #fff;
+     display:block;
+     padding: 5px 10px;
+     border-radius:50%;
+     cursor:pointer;
+     font-family: 'Arial' sans-serif
+   }
+   .modal-inner iframe{
+     position:absolute;
+     height: 100%;
+     widht:100%;
+   }
+   .modal_inner iframe,
+   .modal_wrapper, .modal_inner{
+     top: 0,
+     left 0,
+     bottom 0,
+     right: 0,
+     margin 0,
+     margin:auto;
+   }
+   .modal_wrapper.active{
+     opacity:1;
+     z-index: 99;
+     position:fixed;
+     display:block;
+   }
+     
+
+
   </head>
   
   <body>
-    :)
+    Get rick rolled
+   <div class="modal_wrapper active">
+     <div class="modal_inner">
+       <span class="mod_close"> x </span>
   </body>
   <iframe width="1280" height="720"
 src="https://www.youtube.com/embed/dQw4w9WgXcQ?&autoplay=1&mute=1">
