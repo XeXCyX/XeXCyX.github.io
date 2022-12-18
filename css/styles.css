@@ -1,12 +1,15 @@
 body {
-  background-color: lightblue;
-}
+  background-image: "media/taustakuva.png";
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+       }
 
 h1 {
   color: black;
   text-align: center;
   font-family: verdana;
-  padding: 20px;
+  margin-top: 50px;
 }
 
 p {
