@@ -1,13 +1,13 @@
 <!DOCTYPE html>
+<html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kuljettajat</title>
-    <link rel="stylesheet" href="css/styles2.css">
-    <style>
+<title>Tiimi</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
 
-
-        ul {
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -37,84 +37,35 @@ li a:hover:not(.active) {
 
 .active {
   background-color: #04AA6D;
-  height: 45px;
 }
     </style>
 </head>
 <body>
-  
-    <ul>
-      <li><a class="active" onclick="document.location='index.html'"><img src="https://i.imgur.com/tIOwbIM.png" height="15" width="15" alt="Home"> </a>
-        <li><a onclick="document.location='second.html'">Tiimi</a></li>
-        <li><a onclick="document.location='05B.html'">Auto</a></li>
-        <li><a onclick="document.location='Contact.html'">Kuljettajat</a></li>
-        <li style="float:right"><a onclick="document.location='about.html'">Contact</a></li>
-      </ul>
 
+  <ul>
+    <li><a class="active" onclick="document.location='index.html'"><img src="https://i.imgur.com/tIOwbIM.png" height="15" width="15" alt="Home"> </a>
+      <li><a onclick="document.location='second.html'">Tiimi</a></li>
+      <li><a onclick="document.location='05B.html'">Auto</a></li>
+      <li><a onclick="document.location='Contact.html'">Kuljettajat</a></li>
+      <li style="float:right"><a onclick="document.location='about.html'">Contact</a></li>
+  </ul>
 
-      <h1>Kuljettajat</h1>
-      <div class="b1">
-<h3>Lauri</h3>  <img src="https://i.imgur.com/k1va2Vv.jpg" height="40%" width="auto" class="center" alt="Lauri">
-  <ol>
-    <b>24v
-    <br>Kerava
-    <br>GT3, Drifting, Street racing</b>
-</ol>
-</div>
-<br>
-<div class="b1">
-<h3>Tommi</h3>  <img src="https://i.imgur.com/inVB35p.jpg" height="40%" width="auto" class="center" alt="TOmmi">
-<ol>
-  <b>24v
-    <br>Pori
-    <br>GT3, Drifting, Street racing, Touring car</b>
-    </ol>
-</div>
-<br>
-<div class="b1">
-<h3>Olli</h3>  <img src="https://i.imgur.com/xvNS1Ko.jpg" height="40%" width="auto" class="center" alt="Olli">
-  <ol>
-    <b>22v
-    <br>Oulu
-    <br>GT3, LMP</b>
-    </ol>
-  </div>
+<h1>Tiimiesittely</h1>
+<p>Tämä sirkus lähti käyntiin 2021 marraskuussa kun sirkuksen pari pääpelleä päätti että perustetaan ihan tiimi jotta ei tarvitse muutenvain ajella yhdessä.
+  <br>Samoihin aikoihin hommattiin iRacing jossa aloimme sitten tiiminä kilpailla. Vähän myöhemmässä vaiheessa Olli liittyi mukaan.
+  <br>Olemme kilpailleet monissa 24H endurance kisoissa ja lyhemmissäkin tiiminä. Menestyksestä voi olla montaa mieltä mutta tärkein on että on hauskaa.
+  <br>Tulevaisuudessa tulemme luultavasti myös kilpailemaan driftingissä tiimin väreissä.
+</p>
 <br>
 <br>
 <br>
 <br>
-<h3>Kypärä</h3>
 <br>
 <br>
-<div class="row">
-  <div class="column">
-    <img src="https://i.imgur.com/oT2FpGk.jpg" alt="Kypärä edestä" onclick="myFunction(this);" style="width:80%">
-  </div>
-  <div class="column">
-    <img src="https://i.imgur.com/JgXo6X3.jpg" alt="Kypärä sivu" onclick="myFunction(this);" style="width:80%">
-  </div>
-  <div class="column">
-    <img src="https://i.imgur.com/naep4Jn.jpg" alt="Kypärä toinen sivu" onclick="myFunction(this);" style="width:80%">
-  </div>
-
-    <div class="container">
-      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-      <img id="expandedImg" style="width:35%">
-      <div id="imgtext"></div>
-    </div>
-  </div>
-
-
-<script>
-  function myFunction(imgs) {
-var expandImg = document.getElementById("expandedImg");
-var imgText = document.getElementById("imgtext"); //Ei tähä mitää src tuu?? Eikä alt
-expandImg.src = imgs.src;
-imgText.innerHTML = imgs.alt;
-expandImg.parentElement.style.display = "block";
-
-}
-  </script>
+<figure>
+  <img src="https://i.imgur.com/eAhv3SG.png" alt="Logo" width="70%" height="100%">
+  <figcaption>Logo</figcaption>
+</figure>
 
 <footer>
   <br>
