@@ -1,0 +1,130 @@
+body {
+  background-image: url("https://i.imgur.com/VxzUdYX.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+       }
+
+h1 {
+  color: black;
+  text-align: center;
+  font-family: verdana;
+  margin-top: 50px;
+}
+
+h2 {
+  color: black;
+  text-align: center;
+  font-family: verdana;
+  margin-top: 50px;
+  font-size: 80px;
+}
+
+p {
+  margin-left: 80px;
+  font-family: verdana;
+  font-size: 18px;
+
+}
+
+hr {
+  position: relative;
+  font-family: verdana;
+}
+
+hr.class-1 {
+margin-bottom: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+  border: 2px solid;
+  border-radius: 15px;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  display: none;
+}
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+  border: 2px solid;
+  border-radius: 100px;
+}
+
+h3 {
+  color: black;
+  text-align: left;
+  font-family: verdana;
+  font-size: 50px;
+  margin-left: 200px;
+}
+
+ol {
+  color: black;
+  text-align: left;
+  font-family: verdana;
+  font-size: 20px;
+  margin-left: 200px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+img {
+    border: 2px solid;
+    border-radius: 15px;
+}
+
+.b1 {
+    border: 5px dotted;
+    border-radius: 20px;
+    width: 2000px;
+}
+
+.p2 {
+    text-align: center;
+  }
+  
+  footer {
+    display: block;
+    background-color: rgb(51, 51, 51);
+    color: white;
+  }
