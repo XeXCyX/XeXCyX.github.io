@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +12,7 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky; 
   position: sticky;
   top: 0;
   width: 100%;
@@ -81,38 +81,35 @@ li a:hover:not(.active) {
 <body>
  
   <ul>
-    <li><a class="home" onclick="document.location='index.html'"><img src="https://i.imgur.com/tIOwbIM.png" height="15" width="15" margin="0"> </a>
-      <li><a onclick="document.location='Tiimi.html'">Tiimi</a></li>
-      <li><a onclick="document.location='Auto.html'">Auto</a></li>
-      <li><a onclick="document.location='Kuljettajat.html'">Kuljettajat</a></li>
-      <li style="float:right"><a onclick="document.location='Contact.html'">Contact</a></li>
+    <li><a class="home" onclick="document.location='index.html'"><img src="https://i.imgur.com/tIOwbIM.png" height="15" width="15" alt="Home"> </a>
+      <li><a onclick="document.location='second.html'">Tiimi</a></li>
+      <li><a onclick="document.location='05B.html'">Auto</a></li>
+      <li><a onclick="document.location='Contact.html'">Kuljettajat</a></li>
+      <li style="float:right"><a onclick="document.location='about.html'">Contact</a></li>
   </ul>
     <h2>Ferrari 488 gt3</h2>
 
 
-    <ol>Autona meillä toimii Ferrari 488 GT3 evo 2020. Päädyimme Ferrariin sen ajo ominaisuuksiensa takia.
+    <p>Autona meillä toimii Ferrari 488 GT3 evo 2020. Päädyimme Ferrariin sen ajo ominaisuuksiensa takia.
       <br>Auto on hyvin vakaa ajettava ja renkaiden lämmettyä se ei aliohjaa helposti mutta yliohjaamisen kanssa kannattaa olla varuillaan.
       <br>Autolla on voitettu monia kisoja ja melkein tulimme toiseksi 24H Daytonassa joten ajo-ominaisuuksiltaan auto kelpaa endurance ajoonkin.
       <br>Autohan on siis Ferrari 488 GT3 Evo 2020, jossa on pidempi akseliväli, uusi moottorinhallintajärjestelmä, kuljettajan lisämukavuudet, mukaan lukien uusi, Sabeltilla kehitetty istuin, aerodynaamiset säädöt ja paljon muuta verrattuna edeltäjäänsä.
       <br>Tuloksena on todistetusti hyvä GT3-alusta, joka on ottanut seuraavat askeleet kohti lisää kunniaa maailman suurimmissa sprintti- ja kestävyysmestaruuskilpailuissa.
-
-
-
-    </ol>
+</p>
     <div class="row">
       <div class="column">
-        <img src="https://i.imgur.com/CyfULEr.jpg" alt="Sivu" onclick="myFunction(this);" style="width:100%" class="rounded">
+        <img src="https://i.imgur.com/CyfULEr.jpg" alt="Sivu" onclick="myFunction(this);" style="width:100%">
       </div>
       <div class="column">
-        <img src="https://i.imgur.com/anL40m9.jpg" alt="Keula" onclick="myFunction(this);" style="width:100%" class="rounded">
+        <img src="https://i.imgur.com/anL40m9.jpg" alt="Keula" onclick="myFunction(this);" style="width:100%">
       </div>
       <div class="column">
-        <img src="https://i.imgur.com/54E7u2A.jpg" alt="Perä" onclick="myFunction(this);" style="width:100%" class="rounded">
+        <img src="https://i.imgur.com/54E7u2A.jpg" alt="Perä" onclick="myFunction(this);" style="width:100%">
       </div>
     
         <div class="container">
           <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-          <img id="expandedImg" style="width:80%">
+          <img id="expandedImg" style="width:80%"> 
           <div id="imgtext"></div>
         </div>
       </div>
@@ -123,7 +120,7 @@ li a:hover:not(.active) {
       <p>
         <hr class="class-1" />
         TYPE<div class="b">BI-TURBO V8 90°</div>
-        <hr>
+        <hr> 
         <br>DISPLACEMENT <div class="b">3996 CC</div>
         <hr>
         <br>MAX POWER<div class="b">MAX POWER AROUND 600 HP AT 7000 RPM *</div>
@@ -132,7 +129,7 @@ li a:hover:not(.active) {
         <hr>
         <div class="b">* BOP LIMITED</div>
         <hr>
-      </p>
+     
     </div>
     <button class="collapsible">Dimension</button>
     <div class="content">
@@ -148,7 +145,7 @@ li a:hover:not(.active) {
         <hr>
         <br>WEIGHT <div class="b">1260 KG - BOP LIMITED</div>
         <hr>
-      </p>
+      
     </div>
     <button class="collapsible">Tyres</button>
     <div class="content">
@@ -158,7 +155,7 @@ li a:hover:not(.active) {
         <hr>
         <br>REAR <div class="b">31/71/18</div>
         <hr>
-      </p>
+      
     </div><button class="collapsible">Brakes</button>
     <div class="content">
       <p>
@@ -167,7 +164,7 @@ li a:hover:not(.active) {
         <hr>
         <br>REAR <div class="b">332X32 MM</div>
         <hr>
-      </p>
+     
     </div>
     
 
@@ -193,9 +190,9 @@ li a:hover:not(.active) {
 <script>
       function myFunction(imgs) {
   var expandImg = document.getElementById("expandedImg");
-  var imgText = document.getElementById("imgtext");
+  var imgText = document.getElementById("imgtext"); //En oo tännekää laittaas src :D enkä alttia
   expandImg.src = imgs.src;
-  imgText.innerHTML = imgs.alt;
+  imgText.innerHTML = imgs.alt; 
   expandImg.parentElement.style.display = "block";
 
 }
@@ -206,9 +203,7 @@ li a:hover:not(.active) {
   <hr>
   <p class="p2">© Lauri Rantanen 
     <br><a onclick="document.location='index.html'">Home</a> <a onclick="document.location='second.html'">Tiimi</a> <a onclick="document.location='05B.html'">Auto</a> <a onclick="document.location='Contact.html'">Kuljettajat</a> <a onclick="document.location='about.html'">Contact</a>
-    </div>
 <hr>
-  </p>
     <br>
   
 </footer>
